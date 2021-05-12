@@ -1,0 +1,9 @@
+<div class="card">
+  <img [src]="character.image" [alt]="character.name" class="card-image">
+  <div class="card-body">
+    <h5 class="card-title">{{ character.name }}</h5>
+    <hr>
+    <p class="card-text"><strong>Status:</strong> {{ character.status }}</p>
+    <a [routerLink]="['/personajes/profile', character.id]" class="card-link">More...</a>
+  </div>
+</div>

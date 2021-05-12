@@ -1,0 +1,19 @@
+<div class="container-input">
+  <app-search (searchEvent)="handleSearchCharacter($event)"></app-search>
+</div>
+
+<div class="paginator-container" *ngIf="characters.length">
+  <button class="btn btn-success btn-sm" [disabled]="currentPage < 2" (click)="previousPage()">
+    <</button> <small>Page {{ currentPage }}</small>
+      <button class="btn btn-success btn-sm" [disabled]="currentPage == info.pages" (click)="nextPage()">></button>
+</div>
+
+<div class="row">
+  <div class="col col-xs-12 col-sm-6 col-md-2 col-lg-2" *ngFor='let character of characters'>
+    <app-card-character [character]='character'></app-card-character>
+  </div>
+
+  <div class="container-notResult" *ngIf="!characters.length">
+    <h1>Without results</h1>
+  </div>
+</div>

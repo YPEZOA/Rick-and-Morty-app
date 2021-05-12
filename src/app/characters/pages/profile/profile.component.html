@@ -1,0 +1,18 @@
+<div class="loading" *ngIf="loading">
+  <h1>Cargando...</h1>
+</div>
+<div class="profile-container col-md-4 col-sm-2 col-lg-2">
+  <img [src]="character.image" [alt]="character.name" height='300px' width='300px'>
+  <div class="character-info">
+    <h2 class="title"><strong>{{ character.name }}</strong></h2>
+    <p><strong>Gender:</strong> {{character.gender}}</p>
+    <p><strong>Status:</strong> {{character.status}}</p>
+    <p><strong>Species:</strong> {{character.species}}</p>
+    <p><strong>Created:</strong> {{character.created | date }}</p>
+  </div>
+</div>
+<div class="container-button">
+  <button [routerLink]="['/personajes/listado']" class="btn btn-success btn-sm">Back to list</button>
+</div>
+
+

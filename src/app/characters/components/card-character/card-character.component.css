@@ -1,0 +1,8 @@
+.card {
+  margin: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgb(109, 109, 109);
+}
+.card-link {
+  text-decoration: none;
+}

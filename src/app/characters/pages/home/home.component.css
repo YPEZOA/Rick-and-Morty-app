@@ -1,0 +1,19 @@
+.container {
+    margin-top: 3%;
+    background-image: url('../../../../assets/images/background.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    padding: 200px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 8px rgb(43, 43, 43);
+}
+.text, .home-title, .btn{
+    color: #fff;
+}
+.text {
+    font-size:20px;
+}
+.container-items {
+    margin-right: 150px;
+}
